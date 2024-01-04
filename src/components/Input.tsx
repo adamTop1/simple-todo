@@ -56,7 +56,7 @@ function Input() {
 				type='text'
 				name='addTodo'
 				placeholder='Type here your new todo!'
-				className='w-6/12 mr-4 border-b border-black outline-none focus:border-b-2'
+				className='w-9/12 mr-4 border-b border-black outline-none focus:border-b-2 lg:w-6/12'
 				ref={addTodoRef}
 				onKeyDown={addTodoKeybordEvent}
 			/>

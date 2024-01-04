@@ -4,7 +4,7 @@ import TodoList from './TodoList'
 
 function Todo() {
 	return (
-		<div className='flex flex-col items-center justify-center px-20 py-12 font-mono'>
+		<div className='flex flex-col items-center justify-center px-10 py-12 mx-auto font-mono lg:px-20 lg:max-w-screen-xl'>
 			<Input />
             <Stats />
 			<TodoList />
