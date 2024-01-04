@@ -1,7 +1,5 @@
 # Simple Todo App React + TypeScript
 
-## Simple Todo App
-
 This project is a straightforward Todo application built using React and TypeScript, with state management handled through the useContext hook. Error notifications are implemented using React Toastify, and the visual styling is accomplished with Tailwind CSS. Notably, this marks my initial venture into TypeScript development.
 
 Technologies Used:
