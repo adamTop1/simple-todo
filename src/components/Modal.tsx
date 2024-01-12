@@ -13,7 +13,7 @@ type ChildrenType = {
 }
 const ModalOverlay = ({ children }: ChildrenType) => {
 	return (
-		<div className='fixed z-30 w-4/12 p-4 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded shadow-lg top-1/2 left-1/2'>
+		<div className='fixed z-30 w-1/2 p-4 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded shadow-lg lg:w-5/12 top-1/2 left-1/2'>
 			<div>{children}</div>
 		</div>
 	)
