@@ -28,9 +28,9 @@ const reducer = (state: typeof initState, action: Action) => {
 			const todoExists = state.find(item => item.title === action.payload)
 
 			if (todoExists) {
-				toast.error('Enter some text!', {
+				toast.error('This todo already exist!', {
 					position: 'top-center',
-					autoClose: 5000,
+					autoClose: 3000,
 					hideProgressBar: false,
 					closeOnClick: true,
 					pauseOnHover: true,
