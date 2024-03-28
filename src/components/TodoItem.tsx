@@ -64,7 +64,7 @@ function TodoItem({ title, id, isDone }: todoType) {
 					</button>
 					<button
 						className={cn('text-red-600', {
-							'text-gray-500': isDone,
+							'text-red-600': isDone,
 						})}
 						onClick={deleteTodo}>
 						<RiDeleteBinLine />
