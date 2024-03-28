@@ -1,5 +1,6 @@
 import { ReactElement, createContext, useReducer } from 'react'
 import React from 'react'
+import { toast } from 'react-toastify'
 
 export interface todoType {
 	id: number
@@ -7,10 +8,7 @@ export interface todoType {
 	isDone: boolean
 }
 
-const initState: todoType[] = [
-	{ id: 1, title: 'clean smth', isDone: false },
-	{ id: 2, title: 'clean smth2', isDone: false },
-]
+const initState: todoType[] = []
 
 export interface TodosContextProps {
 	state: todoType[]
@@ -30,6 +28,16 @@ const reducer = (state: typeof initState, action: Action) => {
 			const todoExists = state.find(item => item.title === action.payload)
 
 			if (todoExists) {
+				toast.error('Enter some text!', {
+					position: 'top-center',
+					autoClose: 5000,
+					hideProgressBar: false,
+					closeOnClick: true,
+					pauseOnHover: true,
+					draggable: true,
+					progress: undefined,
+					theme: 'dark',
+				})
 				return state
 			}
 			const id = Date.now()

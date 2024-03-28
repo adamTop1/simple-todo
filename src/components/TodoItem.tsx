@@ -63,8 +63,8 @@ function TodoItem({ title, id, isDone }: todoType) {
 						<MdOutlineEdit />
 					</button>
 					<button
-						className={cn('text-red-600', {
-							'text-red-600': isDone,
+						className={cn('text-red-700', {
+							'text-red-500': isDone,
 						})}
 						onClick={deleteTodo}>
 						<RiDeleteBinLine />
